@@ -22,7 +22,7 @@
             padding-top: 20px;
             width: 100%;
             text-align: center;
-            background: #2a2dfb;
+            background: #3336fd;
             color: white;
             font-size: 20px;
         }
