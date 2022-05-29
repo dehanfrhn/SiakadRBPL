@@ -1,9 +1,9 @@
 @extends('layouts.main')
-
+@section('konten')
 
 <div class="row justify-content-center">
 <div class="col-md-4">
-  {{-- apakah session mempunyai key succes, jika ada, tampilkan alert(dari register controller)--}}
+  {{-- apakah session mempunyai key success, jika ada, tampilkan alert(dari register controller)--}}
   @if(session()->has('success'))
   <div class="alert alert-success alert-dismissible fade show" role="alert">
     {{session('success')}}
@@ -21,7 +21,7 @@
 
 
   <main class="form-signin my-5 py-5">
-    <h1 class="h3 mb-3 fw-normal text-center">LOGIN SIAKAD</h1>
+    <h1 class="h3 m-5 fw-normal text-center">Sign In</h1>
     <form action="/login" method="post">
       @csrf
       <div class="form-floating">
@@ -42,3 +42,4 @@
   </main>
 </div>
 </div>
+@endsection
